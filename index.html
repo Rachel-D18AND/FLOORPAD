@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>D18 Floor Pad Reference</title>
+<style>
+*{box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
+body{margin:0;background:#f7f7f7;color:#222;}
+header{background:#cc0000;color:#fff;padding:18px 24px;}
+header h1{margin:0;font-size:22px;}
+header p{margin:4px 0 0;font-size:13px;opacity:.9;}
+.tabbar{display:flex;gap:8px;padding:14px 24px 0;background:#fff;border-bottom:2px solid #eee;position:sticky;top:0;z-index:10;}
+.tabbtn{padding:10px 22px;border:none;background:#eee;border-radius:8px 8px 0 0;cursor:pointer;font-size:15px;font-weight:600;color:#666;}
+.tabbtn.active{background:#cc0000;color:#fff;}
+.roundpane{display:none;padding:20px 24px 60px;max-width:1400px;margin:0 auto;}
+.roundpane.active{display:block;}
+.sectiontitle{font-size:20px;border-bottom:3px solid #cc0000;padding-bottom:6px;margin-top:30px;}
+.buckettitle{font-size:15px;color:#555;margin:18px 0 8px;text-transform:uppercase;letter-spacing:.5px;}
+.buckettitle .cnt{color:#aaa;font-weight:400;}
+.cardgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;}
+.card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);text-decoration:none;color:#222;display:block;transition:box-shadow .15s;}
+.card:hover{box-shadow:0 4px 14px rgba(0,0,0,.15);}
+.imgwrap{position:relative;width:100%;aspect-ratio:3/4;background:#f0f0f0;overflow:hidden;}
+.imgwrap img{width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0;transition:opacity .2s;}
+.imgwrap .back{opacity:0;}
+.imgwrap.hoverable:hover .front{opacity:0;}
+.imgwrap.hoverable:hover .back{opacity:1;}
+.imgwrap.noimg{display:flex;align-items:center;justify-content:center;padding:10px;text-align:center;}
+.badge{font-size:11px;font-weight:600;padding:6px 8px;border-radius:6px;}
+.badge.nf{background:#ffe0e0;color:#a00;}
+.badge.skip{background:#eee;color:#888;}
+.cbody{padding:10px 12px;}
+.cname{font-size:13px;font-weight:600;line-height:1.3;margin-bottom:4px;min-height:34px;}
+.cdpci{font-size:11px;color:#888;}
+.vendor{font-size:10px;color:#aaa;margin-top:3px;}
+.price{font-size:14px;font-weight:700;color:#cc0000;margin-top:4px;}
+.nophoto{cursor:default;}
+</style>
+</head>
+<body>
+<header>
+  <h1>D18 (A New Day) Floor Pad Reference</h1>
+  <p>Structured directly from the Floor Pad Excel (C1/C2/C3 x Program), enriched with live Target.com photos for KNIT items. 92 total line items, 51 with live photo match.</p>
+</header>
+<div class="tabbar">
+<button class='tabbtn active' onclick="showRound('C1', this)">C1</button>
+<button class='tabbtn' onclick="showRound('C2', this)">C2</button>
+<button class='tabbtn' onclick="showRound('C3', this)">C3</button>
+
+</div>
+<div class='roundpane' data-round='C1'>
+  <h2 class='sectiontitle'>TOPS</h2>
+  <h3 class='buckettitle'>CORE <span class='cnt'>(15)</span></h3>
+  <div class='cardgrid'>
+    <a class='card' href='https://www.target.com/p/women-39-s-sculpt-boat-neck-tank-top-a-new-day-8482-gray-m/-/A-94813098' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_331f3bf8-9ea2-4c71-9223-1e113cebe56e' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Sculpt Boat Neck Tank Top - A New Day™</div>
+        <div class='cdpci'>018-00-6379 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='price'>$12.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-short-sleeve-sculpt-t-shirt-a-new-day-8482-beige-s/-/A-94813118' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_d2471b6d-ba56-4411-a29c-5184b38b80a6' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Short Sleeve Sculpt T-Shirt - A New Day™</div>
+        <div class='cdpci'>018-00-7801 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='price'>$11.25</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>SCULPT SQUARE TANK TOP</div>
+        <div class='cdpci'>018-00-7959 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='vendor'>1068795 Hansae</div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-sculpt-tube-top-a-new-day-8482-pink-xs/-/A-1009995792' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_fe7a19f1-4f33-4e99-8a69-979181031b2b' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Sculpt Tube Top - A New Day™</div>
+        <div class='cdpci'>018-00-2412 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='price'>$7.20</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>SLIM FIT MODERN RIBBED BUTTON-FRONT TANK TOP</div>
+        <div class='cdpci'>018-00-8833 &middot; 2x2Rib, 48% Cotton, 47% Rayon, 5% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>MODERN RIBBED BUTTON-UP KNIT CARDIGAN</div>
+        <div class='cdpci'>018-00-6104 &middot; 2x2Rib, 48% Cotton, 47% Rayon, 5% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>SHORT SLEEVE FITTED JERSEY T-SHIRT</div>
+        <div class='cdpci'>018-00-8090 &middot; Jersey, 96% Modal, 4% Spandex</div>
+        <div class='vendor'>1068795 Hansae</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>LONG SLEEVE FITTED JERSEY T-SHIRT</div>
+        <div class='cdpci'>018-00-8851 &middot; Jersey, 96% Modal, 4% Spandex</div>
+        <div class='vendor'>1068795 Hansae</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>MODERN RIBBED ELBOW SLEEVE TOP</div>
+        <div class='cdpci'>018-00-2725 &middot; 2x2 rib, 48% Cotton, 47% Rayon, 5% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>SLIM FIT MODERN RIBBED MOCK NECK TANK TOP</div>
+        <div class='cdpci'>018-00-4679 &middot; 2x2 rib, 48% Cotton, 47% Rayon, 5% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>MODERN RIBBED T-SHIRT</div>
+        <div class='cdpci'>018-00-4632 &middot; 2x2Rib, 48% Cotton, 47% Rayon, 5% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-short-sleeve-t-shirt-a-new-day-8482-olive-green-m/-/A-95057536' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_adef117e-f9c0-4a07-b329-dd8646194222' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Short Sleeve Perfect T-Shirt - A New Day™</div>
+        <div class='cdpci'>018-00-6376 &middot; Jersey, 60% Cotton, 40% Modal</div>
+        <div class='price'>$6.80</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>SHORT SLEEVE RIBBED T-SHIRT</div>
+        <div class='cdpci'>018-00-5102 &middot; 2x2 rib, 58% Cotton, 39% Modal, 3% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-slim-fit-ribbed-high-neck-tank-top-a-new-day-8482-white-xs/-/A-81245901' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_5022c026-902b-4bc3-b2a5-58f9af105cf6' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Slim Fit Ribbed Tank Top - A New Day™</div>
+        <div class='cdpci'>018-00-9537 &middot; 2x2 rib, 58% Cotton, 39% Modal, 3% Spandex</div>
+        <div class='price'>$6.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-sculpt-cami-top-a-new-day-8482-gray-l/-/A-94812762' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_fcff5fed-ec14-4f82-86cc-661533a61437' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Sculpt Cami Top - A New Day™</div>
+        <div class='cdpci'>018-00-9493 &middot; jersey, 95% Cotton, 5% Spandex</div>
+        <div class='price'>$9.60</div>
+      </div>
+    </a>  </div>
+  <h3 class='buckettitle'>FASHION <span class='cnt'>(8)</span></h3>
+  <div class='cardgrid'>
+    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>SCULPT LONG SLEEVE V-NECK TOP</div>
+        <div class='cdpci'>018-01-9169 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='vendor'>1068795 Hansae</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>LONG SLEEVE LACE TOP</div>
+        <div class='cdpci'>018-01-1275 &middot; Lace, 97% Nylon, 3% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>EYELET SWEATSHIRT</div>
+        <div class='cdpci'>018-01-5183 &middot; French Terry, 57% Cotton, 38% Recycled Polyester, 5% Spandex</div>
+        <div class='vendor'>1989150 VAMANI</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>FRENCH TERRY T-SHIRT</div>
+        <div class='cdpci'>018-01-6117 &middot; French Terry, 60% Cotton, 40% Recycled Polyester</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>EMBELLISHED T-SHIRT</div>
+        <div class='cdpci'>018-01-6038 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='vendor'>1068795 Hansae</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>SLIM FIT HARDWARD RIBBED TANK TOP</div>
+        <div class='cdpci'>018-01-8445 &middot; 1x1 rib, 92% Cotton, 8% Spandex</div>
+        <div class='vendor'>1068795 Hansae</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>TWIST TANK TOP</div>
+        <div class='cdpci'>018-01-5555 &middot; Jersey, 96% Nylon, 4% Spandex</div>
+        <div class='vendor'>1068795 Hansae</div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-ruched-tank-top-a-new-day-8482-light-green-m/-/A-94812424' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_c8b1381f-bbe5-41f4-96df-fbec1a10d0d8' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Ruched Tank Top - A New Day™</div>
+        <div class='cdpci'>018-01-1294 &middot; Jersey, 96% Nylon, 4% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>  </div>
+  <h2 class='sectiontitle'>PANTS</h2>
+  <h3 class='buckettitle'>2.1 <span class='cnt'>(3)</span></h3>
+  <div class='cardgrid'>
+    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>MID-RISE WIDE LEG FRENCH TERRY PANTS</div>
+        <div class='cdpci'>018-01-1692 &middot; French Terry, 60% Cotton, 40% Recycled Polyester</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>KNIT EYELET LEISURE SHORTS</div>
+        <div class='cdpci'>018-11-4600 &middot; French Terry, 57% Cotton, 38% Recycled Polyester, 5% Spandex</div>
+        <div class='vendor'>1989150 VAMANI</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>HIGH-RISE PONTE PULL-ON PANTS</div>
+        <div class='cdpci'>018-10-4533 &middot; Ponte, 71% Rayon, 25% Nylon, 4% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>  </div>
+  <h2 class='sectiontitle'>DRESS</h2>
+  <h3 class='buckettitle'>3.1 <span class='cnt'>(1)</span></h3>
+  <div class='cardgrid'>
+    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>WIDE STRAP SLEEVELESS BUTTON-FRONT MIDI BODYCON DRESS</div>
+        <div class='cdpci'>018-09-3663 &middot; 52% Cotton, 5% Recycled Cotton, 37% Recycled Polyester, 6% Spandex</div>
+        <div class='vendor'>1989909 SKYE TEXTILE (CAMBODIA)</div>
+      </div>
+    </div>  </div>
+  <h3 class='buckettitle'>NON-CAD <span class='cnt'>(4)</span></h3>
+  <div class='cardgrid'>
+    <a class='card' href='https://www.target.com/p/women-39-s-slim-fit-short-sleeve-baby-t-shirt-a-new-day-8482-black-xxl/-/A-88568670' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_657538e6-adbd-4cd1-837a-f6a7dd529235' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Slim Fit Short Sleeve Seamless Baby T-Shirt - A New Day™</div>
+        <div class='cdpci'>018-01-9958 &middot; Jersey, 96% Nylon, 4% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>ONE SHOULDER ASYMMETRICAL KNIT RIBBED TOP</div>
+        <div class='cdpci'>018-01-2680 &middot; 1x1 rib,&#160;60% Cotton, 37% Recycled Polyester, 3% Spandex</div>
+        <div class='vendor'></div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>SMOCKED TANK TOP</div>
+        <div class='cdpci'>018-01-6702 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='vendor'></div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>V-NECK TANK TOP</div>
+        <div class='cdpci'>018-01-8234 &middot; Jersey, 95% Rayon, 5% Spandex</div>
+        <div class='vendor'></div>
+      </div>
+    </div>  </div>
+</div>
+<div class='roundpane' data-round='C2'>
+  <h2 class='sectiontitle'>CF</h2>
+  <h3 class='buckettitle'>CORE <span class='cnt'>(9)</span></h3>
+  <div class='cardgrid'>
+    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>MODERN RIBBED T-SHIRTS</div>
+        <div class='cdpci'>018-00-8010 &middot; 2x2 rib, 48% Cotton, 47% Rayon, 5% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-sculpt-cami-top-a-new-day-8482-gray-l/-/A-94812762' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_fcff5fed-ec14-4f82-86cc-661533a61437' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Sculpt Cami Top - A New Day™</div>
+        <div class='cdpci'>018-00-9493 &middot; jersey, 95% Cotton, 5% Spandex</div>
+        <div class='price'>$9.60</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-sculpt-tube-top-a-new-day-8482-pink-xs/-/A-1009995792' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_fe7a19f1-4f33-4e99-8a69-979181031b2b' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Sculpt Tube Top - A New Day™</div>
+        <div class='cdpci'>018-00-2412 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='price'>$7.20</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-short-sleeve-t-shirt-a-new-day-8482-olive-green-m/-/A-95057536' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_adef117e-f9c0-4a07-b329-dd8646194222' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Short Sleeve Perfect T-Shirt - A New Day™</div>
+        <div class='cdpci'>018-00-6376 &middot; Jersey, 60% Cotton, 40% Modal</div>
+        <div class='price'>$6.80</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-modern-ribbed-cami-top-a-new-day-8482-white-xl/-/A-94973386' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_0da0dd87-66af-46ff-b58f-7c1c789729e0' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Modern Ribbed Cami Top - A New Day™</div>
+        <div class='cdpci'>018-00-2295 &middot; 2x2 rib, 48% Cotton, 47% Rayon, 5% Spandex</div>
+        <div class='price'>$6.60</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>SCULPT SQUARE TANK TOP</div>
+        <div class='cdpci'>018-00-7959 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='vendor'>1068795 Hansae</div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-short-sleeve-sculpt-t-shirt-a-new-day-8482-black-m/-/A-94813110' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_1eb4d4ca-7239-45e2-a80c-ba1ab9488e3d' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Short Sleeve Sculpt T-Shirt - A New Day™</div>
+        <div class='cdpci'>018-00-8569 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='price'>$11.25</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-sculpt-boat-neck-tank-top-a-new-day-8482-gray-m/-/A-94813098' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_331f3bf8-9ea2-4c71-9223-1e113cebe56e' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Sculpt Boat Neck Tank Top - A New Day™</div>
+        <div class='cdpci'>018-00-6379 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='price'>$12.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-sculpt-halter-tank-top-a-new-day-8482-white-4x/-/A-94973380' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_ff0a66bf-06b6-4e37-a6be-5648e660a8fc' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Sculpt Halter Tank Top - A New Day™</div>
+        <div class='cdpci'>018-00-2292 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>  </div>
+  <h3 class='buckettitle'>FASHION <span class='cnt'>(8)</span></h3>
+  <div class='cardgrid'>
+    <a class='card' href='https://www.target.com/p/women-39-s-bubble-hem-tank-top-a-new-day-8482-black-l/-/A-94973225' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_e0378ef1-1126-4cf7-af1a-1bb943ef5763' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Bubble Hem Tank Top - A New Day™</div>
+        <div class='cdpci'>018-01-4100 &middot; Jersey, 60% Cotton, 40% Modal</div>
+        <div class='price'>$7.50</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>ONE SHOULDER RIB KNIT TANK TOP</div>
+        <div class='cdpci'>018-01-5330 &middot; 2x2 rib, 48% Cotton, 47% Rayon, 5% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>ONE SHOULDER RIB KNIT TANK TOP</div>
+        <div class='cdpci'>018-01-1560 &middot; JQD knit, 54% Recycled Polyester, 46% Cotton</div>
+        <div class='vendor'>1068795 Hansae (Vietnam)</div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>SHORT SLEEVE ROUND NECK CROCHET T-SHIRTS</div>
+        <div class='cdpci'>018-01-3931 &middot; Jersey, 60% Cotton, 40% Recycled Polyester</div>
+        <div class='vendor'></div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-compression-twist-tank-top-a-new-day-8482-black-4x/-/A-94973263' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_d1f6b82c-3eda-4ce4-aebf-37c0f870e1db' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Sculpt Twist Tank Top - A New Day™</div>
+        <div class='cdpci'>018-01-3093 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>BEADED RIBBED TANK TOP</div>
+        <div class='cdpci'>018-01-5330 &middot; 2x2 rib, 48% Cotton, 47% Rayon, 5% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-craft-ribbed-cami-top-a-new-day-8482-black-m/-/A-94973288' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_3da0dd44-a7a7-4e81-b6bf-949a2d54e145' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Craft Ribbed Cami Top - A New Day™</div>
+        <div class='cdpci'>018-01-6948 &middot; Ribbed, 59% Cotton, 39% Polyester, 2% Spandex</div>
+        <div class='price'>$16.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-knotted-top-a-new-day-8482-brown-2x/-/A-1008492625' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_7a4b5c94-9b7b-4a26-9bf5-e64368c389af' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Knotted Top - A New Day™</div>
+        <div class='cdpci'>018-01-7166 &middot; Jersey, 56% Cotton, 38% Modal, 6% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>  </div>
+  <h2 class='sectiontitle'>PANTS</h2>
+  <h3 class='buckettitle'>5.1 <span class='cnt'>(1)</span></h3>
+  <div class='cardgrid'>
+    <a class='card' href='https://www.target.com/p/women-39-s-casual-textured-pull-on-pants-a-new-day-8482-cream-red-m/-/A-94972784' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_607177f4-aeba-4568-8caa-5bcc00fab90b' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Casual Textured Pull-On Pants - A New Day™</div>
+        <div class='cdpci'>018-10-5328 &middot; JQD knit, 54% Recycled Polyester, 46% Cotton</div>
+        <div class='price'>$19.25</div>
+      </div>
+    </a>  </div>
+  <h2 class='sectiontitle'>DRESS</h2>
+  <h3 class='buckettitle'>5.1 <span class='cnt'>(2)</span></h3>
+  <div class='cardgrid'>
+    <a class='card' href='https://www.target.com/p/women-39-s-textured-knit-maxi-bodycon-dress-a-new-day-8482-navy-blue-1x/-/A-95023783' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_b6a9b599-6dce-40bd-ad1a-1a07c8b4bfc1' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Textured Knit Maxi Bodycon Dress - A New Day™</div>
+        <div class='cdpci'>018-09-4384 &middot; Knit, 98% Recycled Polyester, 2% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-tie-front-twist-midi-dress-a-new-day-8482-blue-m/-/A-94978622' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_cc6bd7f3-6f18-486c-91a9-76ae7254dae5' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Tie-Front Twist Midi Dress - A New Day™</div>
+        <div class='cdpci'>018-09-6402 &middot; Jersey,  56% Cotton, 38% Modal, 6% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>  </div>
+  <h3 class='buckettitle'>6.1 <span class='cnt'>(1)</span></h3>
+  <div class='cardgrid'>
+    <a class='card' href='https://www.target.com/p/women-39-s-keyhole-beaded-knit-maxi-dress-a-new-day-8482-brown-m/-/A-95094622' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_0a19c5ea-bc67-4cf5-a2d9-581d74b3f965' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Keyhole Beaded Knit Maxi Dress - A New Day™</div>
+        <div class='cdpci'>018-09-8236 &middot; 2x2 rib, 56% Cotton, 36% Rayon, 8% Spandex</div>
+        <div class='price'>$21.00</div>
+      </div>
+    </a>  </div>
+  <h3 class='buckettitle'>NON-CAD <span class='cnt'>(5)</span></h3>
+  <div class='cardgrid'>
+    <a class='card' href='https://www.target.com/p/women-39-s-ribbed-tank-top-a-new-day-8482-black-xxl/-/A-1008492337' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_82d1777e-6767-4131-9f00-a0b120d04fd8' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Refined Rib Layer Tank Top - A New Day™</div>
+        <div class='cdpci'>018-20-9970 &middot; 1x1 rib 96% Cotton, 4% Spandex</div>
+        <div class='price'>$8.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-padded-bra-cami-top-a-new-day-8482-black-xxl/-/A-1008492623' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_3bbae710-cde4-470a-b718-bd0ab0fb55dd' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Padded Bra Cami Top - A New Day™</div>
+        <div class='cdpci'>018-20-0056 &middot; Jersey, 55% Cotton, 38% Modal, 7% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-tank-top-a-new-day-8482-orange-3x/-/A-1007820586' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_9e8426f6-bb51-42f8-a854-7c709cebeb02' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Tank Top - A New Day™</div>
+        <div class='cdpci'>018-01-6893 &middot; Jersey, 88% Recycled Polyester, 12% Spandex</div>
+        <div class='price'>$6.40</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>HARDWARE TUBE TOP</div>
+        <div class='cdpci'>018-01-3790 &middot; Ribbed, 57% Rayon, 41% Recycled Polyester, 2% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-textured-knit-maxi-dress-a-new-day-8482-teal-green-3x/-/A-95014824' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_75947c2b-bf19-4e1b-934a-59db06b7da63' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Textured Knit Maxi Dress - A New Day™</div>
+        <div class='cdpci'>018-09-2646 &middot; Ribbed, 57% Rayon, 41% Recycled Polyester, 2% Spandex</div>
+        <div class='price'>$17.50</div>
+      </div>
+    </a>  </div>
+</div>
+<div class='roundpane' data-round='C3'>
+  <h2 class='sectiontitle'>CF</h2>
+  <h3 class='buckettitle'>CORE <span class='cnt'>(3)</span></h3>
+  <div class='cardgrid'>
+    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>MODERN RIBBED T-SHIRTS</div>
+        <div class='cdpci'>018-00-8010 &middot; 2x2 rib, 48% Cotton, 47% Rayon, 5% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-short-sleeve-t-shirt-a-new-day-8482-olive-green-m/-/A-95057536' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_adef117e-f9c0-4a07-b329-dd8646194222' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Short Sleeve Perfect T-Shirt - A New Day™</div>
+        <div class='cdpci'>018-00-6376 &middot; Jersey, 60% Cotton, 40% Modal</div>
+        <div class='price'>$6.80</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-refined-ribbed-top-a-new-day-8482-brown-striped-s/-/A-95236749' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_b94dcf27-7352-4261-9305-17ae881e8fbd' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Refined Ribbed Top - A New Day™</div>
+        <div class='cdpci'>018-00-8493 &middot; 1 x 1 Rib, 96% Cotton, 4% Spandex</div>
+        <div class='price'>$12.00</div>
+      </div>
+    </a>  </div>
+  <h3 class='buckettitle'>FASHION <span class='cnt'>(15)</span></h3>
+  <div class='cardgrid'>
+    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Boat Neck Textured Tank Top</div>
+        <div class='cdpci'>018-01-5311 &middot; Tricot, 99% Recycled Polyester, 1% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-tie-front-tank-top-a-new-day-8482-blue-xl/-/A-1009000248' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_eecb97cf-5f83-4561-92a0-005d45972069' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Tie-Front Tank Top - A New Day™</div>
+        <div class='cdpci'>018-01-5566 &middot; Knit, 93% Rayon, 7% Spandex</div>
+        <div class='price'>$18.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-modern-jersey-side-ruched-double-layered-shirring-tank-top-a-new-day-8482-cream-2x/-/A-95115519' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_446ce402-2b40-430c-8a2e-86d7d8039dea' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Modern Jersey Side Ruched Double Layered Shirring Tank Top - A New Day™</div>
+        <div class='cdpci'>018-01-2289 &middot; Jersey, 95% Rayon, 5% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Featherweight Turtleneck Top</div>
+        <div class='cdpci'>018-01-0156 &middot; 1 x 1 Rib, 66% Recycled Polyester, 23% Rayon, 5% Spandex, 3% Silk, 3% Wool</div>
+        <div class='vendor'></div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-long-sleeve-featherweight-boat-neck-ruched-t-shirt-a-new-day-8482-brown-m/-/A-95254081' target='_blank'>
+      <div class='imgwrap'><img class='front hoverable' src='https://target.scene7.com/is/image/Target/GUEST_1ef25fc2-59f0-4809-bca5-35923c24e6f2' loading='lazy'><img class='back' src='https://target.scene7.com/is/image/Target/GUEST_4d179e0b-e1a5-45ce-9edb-bfb13b9e9f5e' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Long Sleeve Featherweight Boat Neck Ruched T-Shirt - A New Day™</div>
+        <div class='cdpci'>018-01-6245 &middot; 1 x 1 Rib, 65% Recycled Polyester, 35% Rayon</div>
+        
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-modern-jersey-one-shoulder-ruched-top-a-new-day-8482-black-m/-/A-95250797' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_be0c1a6d-c581-46b2-913b-24de80295de6' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Modern Jersey One Shoulder Ruched Top - A New Day™</div>
+        <div class='cdpci'>018-01-6391 &middot; Jersey, 95% Rayon, 5% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Modern Jersey Off the Shoulder Hardware Long Sleeve Top</div>
+        <div class='cdpci'>018-01-3476 &middot; Jersey, 95% Rayon, 5% Spandex</div>
+        <div class='vendor'></div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-modern-jersey-cowl-open-back-long-sleeve-top-a-new-day-8482-brown-2x/-/A-95234961' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_2e9803cb-c264-4b23-bde9-ebacc4c239d2' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Long Sleeve Modern Jersey Cowl Open Back Boat Neck Top - A New Day™</div>
+        <div class='cdpci'>018-01-8650 &middot; Jersey, 95% Rayon, 5% Spandex</div>
+        <div class='price'>$18.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-modern-jersey-one-shoulder-ruched-tank-top-a-new-day-8482-light-pink-xs/-/A-95250764' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_b36994a1-7418-4338-a585-cf0a6f0ac286' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Modern Jersey Cowl Neck Short Sleeve Top - A New Day™</div>
+        <div class='cdpci'>018-01-9335 &middot; Jersey, 95% Rayon, 5% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Long Sleeve Mesh Ruched T-Shirt</div>
+        <div class='cdpci'>018-01-4765 &middot; Mesh, 95% Recycled Polyester, 5% Spandex</div>
+        <div class='vendor'></div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Mesh Top</div>
+        <div class='cdpci'>018-01-8489 &middot; Mesh, 95% Recycled Polyester, 5% Spandex</div>
+        <div class='vendor'></div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-ribbed-collared-button-up-top-a-new-day-8482-white-m/-/A-95247380' target='_blank'>
+      <div class='imgwrap'><img class='front hoverable' src='https://target.scene7.com/is/image/Target/GUEST_7467f08b-9aef-4416-afcb-b5eec70dfe20' loading='lazy'><img class='back' src='https://target.scene7.com/is/image/Target/GUEST_f24db53e-12b8-4968-a9f3-db146d300736' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Ribbed Collared Button-Up Top - A New Day™</div>
+        <div class='cdpci'>018-01-6143 &middot; 2 x 2 Rib, 56% Cotton, 37% Modal, 7% Spandex</div>
+        <div class='price'>$18.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-compression-twist-tank-top-a-new-day-8482-black-4x/-/A-94973263' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_d1f6b82c-3eda-4ce4-aebf-37c0f870e1db' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Sculpt Twist Tank Top - A New Day™</div>
+        <div class='cdpci'>018-01-3093 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>DOUBLE-SCOOP BODYSUIT</div>
+        <div class='cdpci'>018-01-1009 &middot; 2x2 rib, 58% Cotton, 39% Modal, 3% Spandex</div>
+        <div class='vendor'></div>
+      </div>
+    </div>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>ASYMMETRICAL T-SHIRT</div>
+        <div class='cdpci'>018-01-7506 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='vendor'></div>
+      </div>
+    </div>  </div>
+  <h3 class='buckettitle'>OVERFLOW <span class='cnt'>(3)</span></h3>
+  <div class='cardgrid'>
+    <a class='card' href='https://www.target.com/p/women-39-s-refined-ribbed-knit-tank-top-a-new-day-8482-brown-4x/-/A-95252625' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_9ebcde2e-c776-4e5b-a7be-0a52327ac294' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Refined Ribbed Knit Tank Top - A New Day™</div>
+        <div class='cdpci'>018-20-0253 &middot; 1 x 1 Rib, 96% Cotton, 4% Spandex</div>
+        <div class='price'>$10.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-refined-ribbed-boat-neck-top-a-new-day-8482-black-m/-/A-95236615' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_d0d75fbf-0bd8-4f1d-b526-852783549215' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Three Quarter Sleeve Refined Ribbed Boat Neck Top - A New Day™</div>
+        <div class='cdpci'>018-20-0126 &middot; 1 x 1 Rib, 96% Cotton, 4% Spandex</div>
+        <div class='price'>$12.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-bra-solution-tank-top-a-new-day-8482-pink-s/-/A-1008343606' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_2399d5af-e302-4229-ae7e-b12dae0b0a4a' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Padded Bra Tank Top - A New Day™</div>
+        <div class='cdpci'>018-20-0002 &middot; 2x2 rib, 95% Rayon, 5% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>  </div>
+  <h2 class='sectiontitle'>PANTS</h2>
+  <h3 class='buckettitle'>7.1 <span class='cnt'>(1)</span></h3>
+  <div class='cardgrid'>
+    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>MID-RISE TIE-FRONT TEXTURED KNIT PULL-ON FLARE PANTS</div>
+        <div class='cdpci'>018-04-3829 &middot; Tricot, 99% Recycled Polyester, 1% Spandex</div>
+        <div class='vendor'>1042782 SAE-A</div>
+      </div>
+    </div>  </div>
+  <h2 class='sectiontitle'>DRESS</h2>
+  <h3 class='buckettitle'>10.1 <span class='cnt'>(1)</span></h3>
+  <div class='cardgrid'>
+    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge skip'>Non-knit (photo skipped)</span></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Long Sleeve Side Rouching Midi Knit Dress</div>
+        <div class='cdpci'>018-03-6721 &middot; Jesrey, 56% Cotton, 38% Modal, 6% Spandex</div>
+        <div class='vendor'></div>
+      </div>
+    </div>  </div>
+  <h3 class='buckettitle'>NON-CAD <span class='cnt'>(12)</span></h3>
+  <div class='cardgrid'>
+    <a class='card' href='https://www.target.com/p/women-39-s-ribbed-muscle-pullover-tank-top-a-new-day-8482-green-xs/-/A-1011093867' target='_blank'>
+      <div class='imgwrap'><img class='front hoverable' src='https://target.scene7.com/is/image/Target/GUEST_aa77b162-de41-40ac-b01d-9bee2a9d3a36' loading='lazy'><img class='back' src='https://target.scene7.com/is/image/Target/GUEST_bd97cc2a-a815-46c0-a897-db19f10a3559' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Ribbed Muscle Pullover Tank Top - A New Day™</div>
+        <div class='cdpci'>018-00-7075 &middot; 2X2 RIB, 48% Cotton, 47% Viscose, 5% Spandex</div>
+        
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-modern-ribbed-tank-top-a-new-day-8482-green-xl/-/A-1011118927' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_b35eb9b7-698a-403f-ab11-fcf0b6f8952e' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Modern Ribbed Tank Top - A New Day™</div>
+        <div class='cdpci'>018-20-0678 &middot; 2x2 rib, 56% Cotton, 37% Modacrylic, 7% Spandex</div>
+        <div class='price'>$10.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-cap-sleeve-boat-neck-t-shirt-a-new-day-8482-olive-green-1x/-/A-1011093905' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_9ab4f413-eec5-460f-8b9f-4dc3b100ce15' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Cap Sleeve Boat Neck T-Shirt - A New Day™</div>
+        <div class='cdpci'>018-20-0579 &middot; Knit, 51% Cotton, 5% Recycled Cotton, 37% Modal, 7% Spandex</div>
+        <div class='price'>$12.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-rolled-modern-ribbed-tank-top-a-new-day-8482-gray-l/-/A-95247211' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_3503f154-8e26-4982-a0a1-ae7967529030' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Rolled Modern Ribbed Tank Top - A New Day™</div>
+        <div class='cdpci'>018-01-8844 &middot; 2X2 RIB, 48% Cotton, 47% Viscose, 5% Spandex</div>
+        <div class='price'>$15.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-hardware-tank-top-a-new-day-8482-maroon-m/-/A-1011090243' target='_blank'>
+      <div class='imgwrap'><img class='front hoverable' src='https://target.scene7.com/is/image/Target/GUEST_baef110d-5f15-48e3-974d-dd7232c63587' loading='lazy'><img class='back' src='https://target.scene7.com/is/image/Target/GUEST_5c64fb42-32bd-4926-bc11-eec975a79ac9' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Hardware Tank Top - A New Day™</div>
+        <div class='cdpci'>018-01-3639 &middot; Jersey, 95% Rayon, 5% Spandex</div>
+        
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-short-sleeve-tie-front-knit-midi-dress-a-new-day-8482-blue-2x/-/A-1006183991' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_f5cc9f6a-da03-452d-ab15-fffaaa847aa8' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Short Sleeve Tie-Front Knit Mini Dress - A New Day™</div>
+        <div class='cdpci'>018-09-2479 &middot; Jersey, 56% Cotton, 38% Modal, 6% Spandex</div>
+        <div class='price'>$12.50</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-cap-sleeve-side-ruched-t-shirt-a-new-day-8482-black-m/-/A-1011277548' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_46826e23-ce09-4e76-9ea6-1b29dc3094bb' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Cap Sleeve Side Ruched T-Shirt - A New Day™</div>
+        <div class='cdpci'>018-01-8188 &middot; 1 x 1 Rib, 61% Recycled Polyester, 33% Rayon, 6% Spandex</div>
+        <div class='price'>$12.00</div>
+      </div>
+    </a>    <div class='card nophoto'>
+      <div class='imgwrap noimg'><span class='badge nf'>Discontinued / Not on Target.com</span></div>
+      <div class='cbody'>
+        <div class='cname'>PEARL SCULP CAMI TANK TOP</div>
+        <div class='cdpci'>018-01-9437 &middot; Jersey, 95% Cotton, 5% Spandex</div>
+        <div class='vendor'></div>
+      </div>
+    </div>    <a class='card' href='https://www.target.com/p/women-39-s-lace-cami-tank-top-a-new-day-8482-pink-xs/-/A-95021955' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_4e0cb8fc-c3c3-4976-a9c6-c69857f084d6' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Modern Ribbed V-Neck Lace Cami Top - A New Day™</div>
+        <div class='cdpci'>018-01-1668 &middot; 2X2 RIB, 48% Cotton, 47% Viscose, 5% Spandex</div>
+        <div class='price'>$12.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-high-rise-cropped-pants-a-new-day-8482-black-18/-/A-94643733' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_d79c3715-1762-448c-a7e4-530bcf4ce16f' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s High-Rise Cropped Pants - A New Day™</div>
+        <div class='cdpci'>018-10-4019 &middot; Ponte di Roma, 70% Rayon, 25% Nylon, 5% Spandex</div>
+        <div class='price'>$20.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-sailor-straight-leg-cropped-pants-a-new-day-8482-brown-8/-/A-95027310' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_b7c297a7-baad-4a92-9726-e5a1d56439b5' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Sailor Straight Leg Cropped Pants - A New Day™</div>
+        <div class='cdpci'>018-10-5551 &middot; Ponte di Roma, 70% Rayon, 25% Nylon, 5% Spandex</div>
+        <div class='price'>$22.00</div>
+      </div>
+    </a>    <a class='card' href='https://www.target.com/p/women-39-s-low-rise-mini-kick-flare-pants-a-new-day-8482-black-s/-/A-1010423647' target='_blank'>
+      <div class='imgwrap'><img class='front' src='https://target.scene7.com/is/image/Target/GUEST_1f620676-3268-4d7b-9392-7a7976a0ec64' loading='lazy'></div>
+      <div class='cbody'>
+        <div class='cname'>Women&#39;s Mid-Rise Mini Kick Flare Pants - A New Day™</div>
+        <div class='cdpci'>018-04-8786 &middot; Knit, 65% Rayon, 30% Nylon, 5% Spandex</div>
+        <div class='price'>$28.00</div>
+      </div>
+    </a>  </div>
+</div>
+
+<script>
+function showRound(r, btn){
+  document.querySelectorAll('.roundpane').forEach(p => p.classList.toggle('active', p.dataset.round === r));
+  document.querySelectorAll('.tabbtn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+document.querySelector('.roundpane').classList.add('active');
+</script>
+</body>
+</html>
