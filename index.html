@@ -6,29 +6,44 @@
 <style>
 *{box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
 body{margin:0;background:#f7f7f7;color:#222;}
-header{background:#cc0000;color:#fff;padding:24px;}
+header{background:#D6336C;color:#fff;padding:24px;}
 header h1{margin:0;font-size:24px;}
 header p{margin:6px 0 0;font-size:13px;opacity:.9;}
 .wrap{max-width:900px;margin:0 auto;padding:24px;}
 .hero{background:#fff;border-radius:14px;padding:26px;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-bottom:28px;border:1px solid #eee;}
-.hero-tag{display:inline-block;background:#ffe0e0;color:#a00;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;margin-bottom:10px;}
+.hero-tag{display:inline-block;background:#ffe0e0;color:#C2185B;font-size:12px;font-weight:700;padding:4px 10px;border-radius:20px;margin-bottom:10px;}
 .hero h2{margin:0 0 6px;font-size:22px;}
 .hero-sub{color:#888;font-size:13px;margin-bottom:16px;}
 .hero-date{font-size:15px;color:#333;margin-bottom:18px;}
-.hero-date b{color:#cc0000;font-size:17px;}
-.hero-cta{display:inline-block;background:#cc0000;color:#fff;text-decoration:none;font-weight:700;padding:12px 24px;border-radius:8px;font-size:15px;}
-.hero-cta:hover{background:#a00000;}
+.hero-date b{color:#D6336C;font-size:17px;}
+.hero-cta{display:inline-block;background:#D6336C;color:#fff;text-decoration:none;font-weight:700;padding:12px 24px;border-radius:8px;font-size:15px;}
+.hero-cta:hover{background:#A61E4D;}
 .section-title{font-size:16px;font-weight:700;color:#444;margin:0 0 12px;text-transform:uppercase;letter-spacing:.5px;}
 .histlist{display:flex;flex-direction:column;gap:10px;}
 .histrow{display:grid;grid-template-columns:140px 1fr auto 24px;align-items:center;gap:14px;background:#fff;border:1px solid #eee;border-radius:10px;padding:14px 16px;text-decoration:none;color:#222;transition:box-shadow .15s,border-color .15s;}
 .histrow:hover{box-shadow:0 3px 10px rgba(0,0,0,.08);border-color:#ddd;}
 .histdate{font-weight:700;font-size:14px;white-space:nowrap;}
-.latest-badge{background:#cc0000;color:#fff;font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:6px;vertical-align:middle;}
+.latest-badge{background:#D6336C;color:#fff;font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;margin-left:6px;vertical-align:middle;}
 .histlabel{color:#555;font-size:13px;}
 .histstats{display:flex;gap:6px;flex-wrap:wrap;}
 .mini-badge{background:#f0f0f0;color:#666;font-size:11px;font-weight:600;padding:3px 8px;border-radius:10px;white-space:nowrap;}
-.mini-badge.new{background:#ffe0e0;color:#a00;}
+.mini-badge.new{background:#ffe0e0;color:#C2185B;}
 .histarrow{color:#ccc;font-size:18px;}
+.track-card{background:#fff;border-radius:14px;padding:24px 26px;box-shadow:0 2px 10px rgba(0,0,0,.07);margin-bottom:28px;border:1px solid #eee;text-decoration:none;color:#222;display:block;transition:box-shadow .15s;}
+.track-card:hover{box-shadow:0 4px 14px rgba(0,0,0,.12);}
+.track-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:6px;}
+.track-title{font-size:12px;font-weight:700;color:#D6336C;letter-spacing:.5px;margin-bottom:4px;}
+.track-name{font-size:19px;font-weight:700;color:#222;}
+.track-sub{color:#888;font-size:13px;margin-top:4px;}
+.track-dates{display:flex;gap:10px;flex-shrink:0;}
+.track-datebox{background:#fdf1f4;border-radius:8px;padding:8px 12px;text-align:center;}
+.track-datebox .lbl{font-size:10px;color:#b34;opacity:.8;}
+.track-datebox .val{font-size:14px;font-weight:700;color:#D6336C;}
+.track-stats{display:flex;gap:28px;margin-top:18px;padding-top:16px;border-top:1px solid #f2f2f2;flex-wrap:wrap;}
+.track-stat{text-align:left;}
+.track-stat .num{font-size:22px;font-weight:800;color:#222;}
+.track-stat .num.pink{color:#D6336C;}
+.track-stat .lbl{font-size:11px;color:#999;margin-top:2px;}
 footer{text-align:center;color:#aaa;font-size:12px;padding:20px;}
 </style>
 </head>
@@ -46,7 +61,28 @@ footer{text-align:center;color:#aaa;font-size:12px;padding:20px;}
     <a class="hero-cta" href="2026-09-11.html">최신 리포트 보기 &rarr;</a>
   </div>
 
-  <div class="section-title">업데이트 히스토리 (1회)</div>
+  <a class="track-card" href="https://rachel-d18and.github.io/WEEKLY-RESEARCH/" target="_blank">
+    <div class="track-top">
+      <div>
+        <div class="track-title">격주 트래킹 &middot; 2주 단위 자동 수집</div>
+        <div class="track-name">D18 A New Day T.com 리서치</div>
+        <div class="track-sub">Tops &middot; Bottoms &middot; Dress &mdash; 신상 &middot; 가격 &middot; 카테고리 트래킹</div>
+      </div>
+      <div class="track-dates">
+        <div class="track-datebox"><div class="lbl">최신 회차</div><div class="val">2026-09-11</div></div>
+        <div class="track-datebox"><div class="lbl">최종 게시</div><div class="val">2026-09-11</div></div>
+      </div>
+    </div>
+    <div class="track-stats">
+      <div class="track-stat"><div class="num">160</div><div class="lbl">전체 카탈로그</div></div>
+      <div class="track-stat"><div class="num pink">37</div><div class="lbl">NEW</div></div>
+      <div class="track-stat"><div class="num">85</div><div class="lbl">Tops (21 new)</div></div>
+      <div class="track-stat"><div class="num">46</div><div class="lbl">Bottoms (10 new)</div></div>
+      <div class="track-stat"><div class="num">29</div><div class="lbl">Dress (6 new)</div></div>
+    </div>
+  </a>
+
+  <div class="section-title">Floor Pad 업데이트 히스토리 (1회)</div>
   <div class="histlist">
     <a class='histrow' href='2026-09-11.html'>
       <div class='histdate'>2026-09-11 <span class='latest-badge'>최신</span></div>
