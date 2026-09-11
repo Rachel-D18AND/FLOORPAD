@@ -18,7 +18,7 @@ header .backlink:hover{opacity:1;background:rgba(61,61,61,.08);}
 .tabbtn{padding:10px 22px;border:none;background:#eee;border-radius:8px 8px 0 0;cursor:pointer;font-size:15px;font-weight:600;color:#666;}
 .tabbtn.active{background:#F7EAE7;color:#4a4441;}
 .newonlybtn{margin-left:auto;margin-bottom:10px;padding:9px 18px;border:none;border-radius:20px;background:#F7EAE7;color:#4a4441;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.2);}
-.newonlybtn.active{background:#7a0000;}
+.newonlybtn.active{background:#4a4441;color:#F7EAE7;}
 .newonlybtn:hover{opacity:.9;}
 .roundpane{display:none;padding:20px 24px 60px;max-width:1400px;margin:0 auto;}
 .roundpane.active{display:block;}
@@ -915,7 +915,20 @@ function updateNewOnlyVisibility(){
 }
 function toggleNewOnly(btn){
   document.body.classList.toggle('newonly');
-  btn.classList.toggle('active', document.body.classList.contains('newonly'));
+  var isNewOnly = document.body.classList.contains('newonly');
+  btn.classList.toggle('active', isNewOnly);
+  if (isNewOnly) {
+    var activePane = document.querySelector('.roundpane.active');
+    var hasNewInActive = activePane && activePane.querySelector('.card[data-new="1"]');
+    if (!hasNewInActive) {
+      var targetPane = Array.from(document.querySelectorAll('.roundpane')).find(function(p){ return p.querySelector('.card[data-new="1"]'); });
+      if (targetPane) {
+        var targetRound = targetPane.dataset.round;
+        var targetBtn = Array.from(document.querySelectorAll('.tabbtn')).find(function(b){ return b.textContent.trim() === targetRound; });
+        if (targetBtn) { showRound(targetRound, targetBtn); }
+      }
+    }
+  }
   updateNewOnlyVisibility();
 }
 document.querySelector('.roundpane').classList.add('active');
