@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D18 Floor Pad - Style Timeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#F7EAE7;--ink:#222;--soft:#8a7f78;--line:#ece4e0;--live:#4f9d69;--gone:#c9a39e;--goneink:#a4574d;--today:__TODAYPCT__%;--snaps:__SNAPCOUNT__;
+ --cols:56px 290px 112px minmax(560px,1fr) 150px;}
+*{box-sizing:border-box;font-family:'Inter','Segoe UI',Arial,sans-serif;}
+body{margin:0;background:#f7f7f7;color:var(--ink);}
+header{position:relative;background:var(--pink);color:#4a4441;padding:22px 170px 22px 24px;}
+.brand-logo{position:absolute;top:14px;right:24px;height:56px;width:56px;object-fit:cover;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.15);}
+header h1{margin:0;font-size:22px;font-family:'Poppins',sans-serif;}
+header p{margin:6px 0 0;font-size:13px;opacity:.9;}
+header a.back{display:inline-block;margin-top:10px;font-size:12px;color:#4a4441;text-decoration:none;border:1px solid #cdbdb8;border-radius:6px;padding:4px 10px;background:rgba(255,255,255,.6);}
+.wrap{max-width:1400px;margin:0 auto;padding:20px 20px 40px;}
+.sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:16px;}
+.box{background:#fff;border:1px solid #eee;border-radius:12px;padding:14px 16px;box-shadow:0 1px 6px rgba(0,0,0,.05);}
+.box .n{font-family:'Poppins',sans-serif;font-size:26px;font-weight:700;}
+.box .l{font-size:12px;color:var(--soft);margin-top:2px;line-height:1.5;}
+.box.live .n{color:var(--live);} .box.gone .n{color:var(--goneink);}
+.ctrl{background:#fff;border:1px solid #eee;border-radius:12px;padding:12px 14px;margin-bottom:14px;display:flex;flex-direction:column;gap:9px;}
+.crow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.crow .lbl{font-size:11px;font-weight:700;color:var(--soft);width:54px;letter-spacing:.4px;}
+.chip{font-size:12px;font-weight:600;padding:5px 11px;border-radius:100px;border:1px solid var(--line);background:#fff;color:#6b625c;cursor:pointer;}
+.chip b{font-weight:700;color:#a09792;margin-left:2px;}
+.chip.active{background:#4a4441;border-color:#4a4441;color:#fff;} .chip.active b{color:#e5dad5;}
+.crow input[type=text]{border:1px solid var(--line);border-radius:8px;padding:7px 11px;font-size:13px;width:240px;}
+.crow select{border:1px solid var(--line);border-radius:8px;padding:6px 9px;font-size:12px;background:#fff;}
+.cnt{margin-left:auto;font-size:12px;color:var(--soft);}
+.scroller{background:#fff;border:1px solid #eee;border-radius:12px;overflow-x:auto;box-shadow:0 2px 10px rgba(0,0,0,.05);}
+.table{min-width:1180px;}
+.thead,.row{display:grid;grid-template-columns:var(--cols);gap:12px;align-items:center;padding:0 14px;}
+.thead{position:sticky;top:0;z-index:6;background:#fcf8f7;border-bottom:1px solid var(--line);height:44px;font-size:11px;font-weight:700;color:var(--soft);letter-spacing:.3px;}
+.row{border-bottom:1px solid #f3eeec;padding-top:8px;padding-bottom:8px;}
+.row:hover{background:#fffaf9;}
+.row.hide{display:none;}
+.c-img img,.c-img .noimg{width:56px;height:74px;object-fit:cover;border-radius:6px;background:#eee;display:block;}
+.nm{font-size:13px;font-weight:600;line-height:1.35;}
+.nm a{color:inherit;text-decoration:none;} .nm a:hover{text-decoration:underline;color:#8f4a42;}
+.star{color:#f0a500;margin-right:4px;}
+.id{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;color:#554c47;margin-top:2px;}
+.mt{font-size:11.5px;color:var(--soft);margin-top:2px;} .mt s{color:#aaa;}
+.tags{margin-top:4px;display:flex;gap:4px;flex-wrap:wrap;}
+.tags span{font-size:10px;font-weight:600;padding:1px 6px;border-radius:5px;background:#f3eeec;color:#7a6f68;}
+.tags .sec{background:#efe7f4;color:#5d4a80;}
+.settag{display:inline-block;font-size:11px;font-weight:700;padding:3px 8px;border-radius:7px;background:hsl(var(--h,0) var(--sat,55%) 91%);color:hsl(var(--h,0) var(--sat,40%) 28%);}
+.c-set small{display:block;font-size:10.5px;color:var(--soft);margin-top:3px;} .c-set small.extra{color:#b0794f;}
+.s-1_1{--h:350}.s-2_1{--h:18}.s-3_1{--h:42}.s-4_1{--h:85}.s-5_1{--h:140}.s-6_1{--h:170}.s-7_1{--h:200}.s-8_1{--h:228}.s-9_1{--h:268}.s-10_1{--h:305}
+.s-CF,.s-LATE,.s-NEW{--sat:0%;--h:0}
+.c-gantt{position:relative;}
+.track{position:relative;height:26px;background-image:__MGRID__;}
+.track::after{content:'';position:absolute;left:var(--today);top:-9px;bottom:-9px;border-left:2px dashed rgba(192,57,43,.55);pointer-events:none;}
+.bar{position:absolute;top:6px;height:14px;border-radius:7px;}
+.bar.live{background:var(--live);} .bar.gone{background:var(--gone);}
+.bar.hatch{background:repeating-linear-gradient(45deg,var(--gone) 0 4px,#f4e8e5 4px 8px);border-radius:0 7px 7px 0;}
+.bar.approx{border-left:3px dotted #4a4441;border-top-left-radius:3px;border-bottom-left-radius:3px;}
+.xmark{position:absolute;top:2px;transform:translateX(-50%);font-size:13px;font-weight:800;color:var(--goneink);}
+.c-snap{display:flex;} .snapcell{width:46px;text-align:center;display:flex;justify-content:center;}
+.dot{display:inline-block;width:13px;height:13px;border-radius:50%;}
+.dot.live{background:var(--live);} .dot.gone{background:#fff;border:2px solid var(--goneink);} .dot.na{width:9px;height:2px;border-radius:1px;background:#cfc7c3;align-self:center;}
+.st{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:100px;}
+.st.live{background:#e5f3ea;color:#2d7248;} .st.gone{background:#f6e6e3;color:var(--goneink);}
+.c-stat small{display:block;font-size:10.5px;color:var(--soft);margin-top:3px;}
+.thead .c-gantt{height:44px;} .mlab{position:absolute;top:14px;font-size:10.5px;font-weight:700;color:#8a7f78;padding-left:4px;border-left:1px solid #ddd2cd;height:16px;line-height:16px;}
+.stick{position:absolute;top:30px;width:2px;height:14px;background:#4f9d69;opacity:.8;}
+.legend{margin-top:14px;background:#fff;border:1px solid #eee;border-radius:12px;padding:14px 18px;font-size:12px;color:#6b625c;line-height:1.8;}
+.legend .lg{display:inline-flex;align-items:center;gap:6px;margin-right:16px;}
+.lbar{display:inline-block;width:28px;height:10px;border-radius:5px;}
+.empty{padding:40px;text-align:center;color:var(--soft);display:none;}
+footer{text-align:center;color:#aaa;font-size:12px;padding:20px;}
+@media (max-width:700px){header{padding-right:90px;}}
+</style>
+</head>
+<body>
+<header>
+  <img class="brand-logo" src="__LOGO__" alt="A New Day">
+  <h1>Floor Pad &middot; 스타일 타임라인</h1>
+  <p>스타일별 입고(SET) → 판매 → 내려간 시점을 한눈에 &middot; 업데이트 __UPDATED__</p>
+  <a class="back" href="https://rachel-d18and.github.io/FLOORPAD/">&larr; 대시보드로</a>
+</header>
+<div class="wrap">
+  <div class="sum">
+    <div class="box"><div class="n">__TOTAL__</div><div class="l">고유 스타일<br>(Floor Pad 카드 __CARDS__장 - 일부는 여러 라운드에 중복 등재)</div></div>
+    <div class="box live"><div class="n">__LIVE__</div><div class="l">Live (T.com 판매중)<br>10/14 확인</div></div>
+    <div class="box gone"><div class="n">__GONE__</div><div class="l">내려간 날 &nbsp;9/11 __G911__개 &middot; 9/30 __G930__개 &middot; 10/14 __G1014__개</div></div>
+  </div>
+
+  <div class="ctrl">
+    <div class="crow">
+      <span class="lbl">검색</span><input type="text" id="q" placeholder="DPCI / 이름 / PID / 벤더">
+      <span class="cnt" id="cnt"></span>
+    </div>
+    <div class="crow" data-group="status"><span class="lbl">상태</span>
+      <button class="chip active" data-val="all">전체</button><button class="chip" data-val="live">Live</button><button class="chip" data-val="gone">Discontinued</button><button class="chip" data-val="recent" title="9/11 이후(9/30, 10/14)에 내려간 스타일">9/11 이후 새로 내려감 <b>__RECENTN__</b></button>
+    </div>
+    <div class="crow" data-group="set"><span class="lbl">입고 SET</span>__SETCHIPS__</div>
+    <div class="crow" data-group="section"><span class="lbl">섹션</span>__SECCHIPS__</div>
+    <div class="crow" data-group="round"><span class="lbl">라운드</span>__RDCHIPS__
+      <span class="lbl" style="margin-left:18px;width:auto">정렬</span>
+      <select id="sort"><option value="status" selected>판매중 먼저</option><option value="start">입고 빠른순</option><option value="startd">입고 늦은순</option><option value="name">이름순</option></select>
+    </div>
+  </div>
+
+  <div class="scroller">
+    <div class="table">
+      <div class="thead">
+        <div></div><div>STYLE</div><div>입고 (SET)</div>
+        <div class="c-gantt">__MONTHS__<div style="position:absolute;left:0;right:0;top:0;height:12px;font-size:10px;color:#b4a9a3;padding-left:4px;line-height:12px">2026 &nbsp;(점선 = 오늘)</div></div>
+
+        <div>상태</div>
+      </div>
+      <div id="rows">
+__ROWS__
+      </div>
+      <div class="empty" id="empty">조건에 맞는 스타일이 없어요.</div>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div>
+      <span class="lg"><span class="lbar" style="background:var(--live)"></span>판매중 (입고 ~ 오늘)</span>
+      <span class="lg"><span class="lbar" style="background:var(--gone)"></span><span style="color:var(--goneink);font-weight:800">&#10005;</span>내려간 스타일 (&#10005; = 내려간 날)</span>
+      <span class="lg">입고일 = 엑셀 SET 기준 (n.1 SET = n월 2주차)</span>
+    </div>
+  </div>
+</div><footer>Sae-A Trading &middot; D18 AND Team</footer>
+
+<script>
+(function(){
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#rows .row'));
+  var holder = document.getElementById('rows');
+  var state = {status:'all', set:'all', section:'all', round:'all', q:''};
+  function apply(){
+    var shown = 0;
+    rows.forEach(function(r){
+      var ok = true;
+      if (state.status === 'live' && r.dataset.status !== 'live') ok = false;
+      if (state.status === 'gone' && r.dataset.status !== 'gone') ok = false;
+      if (state.status === 'recent' && !(r.dataset.status === 'gone' && r.dataset.gone !== '~9/11')) ok = false;
+      if (state.set !== 'all' && r.dataset.set !== state.set) ok = false;
+      if (state.section !== 'all' && r.dataset.section !== state.section) ok = false;
+      if (state.round !== 'all' && (' ' + r.dataset.round + ' ').indexOf(' ' + state.round + ' ') < 0) ok = false;
+      if (state.q && r.dataset.text.indexOf(state.q) < 0) ok = false;
+      r.classList.toggle('hide', !ok);
+      if (ok) shown++;
+    });
+    document.getElementById('cnt').textContent = '표시 ' + shown + ' / ' + rows.length;
+    document.getElementById('empty').style.display = shown ? 'none' : 'block';
+  }
+  document.querySelectorAll('.crow[data-group]').forEach(function(g){
+    g.addEventListener('click', function(e){
+      var b = e.target.closest('.chip'); if (!b) return;
+      g.querySelectorAll('.chip').forEach(function(c){ c.classList.remove('active'); });
+      b.classList.add('active');
+      state[g.dataset.group] = b.dataset.val;
+      apply();
+    });
+  });
+  document.getElementById('q').addEventListener('input', function(e){ state.q = e.target.value.trim().toLowerCase(); apply(); });
+  function sortRows(v){
+    var cmp = {
+      start: function(a,b){ return (+a.dataset.start) - (+b.dataset.start); },
+      startd: function(a,b){ return (+b.dataset.start) - (+a.dataset.start); },
+      status: function(a,b){ return (a.dataset.status === b.dataset.status ? (+a.dataset.start) - (+b.dataset.start) : (a.dataset.status === 'live' ? -1 : 1)); },
+      name: function(a,b){ return a.querySelector('.nm').textContent.localeCompare(b.querySelector('.nm').textContent); }
+    }[v];
+    rows.sort(cmp).forEach(function(r){ holder.appendChild(r); });
+  }
+  document.getElementById('sort').addEventListener('change', function(e){ sortRows(e.target.value); });
+  sortRows('status');
+  apply();
+})();
+</script>
+</body>
+</html>
